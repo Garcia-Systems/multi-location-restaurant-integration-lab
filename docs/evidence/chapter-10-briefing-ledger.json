@@ -1,0 +1,33 @@
+{
+  "chapter": 10,
+  "artifact": "group management briefing",
+  "engineering_hours": null,
+  "demonstrated_shared_value": [
+    "canonical records from POS, reservations, labor, and inventory support one management artifact",
+    "shared canonical location and business-date identity enables combined context",
+    "compatible location net sales remains usable when product detail is incomplete"
+  ],
+  "new_shared_work": [
+    "typed briefing model and deterministic generation",
+    "operational and data-quality investigation signals",
+    "evidence-limit presentation and compact text rendering"
+  ],
+  "system_specific_contribution": [
+    "reservation status and availability context",
+    "worked-hours and labor-cost completeness context",
+    "inventory unit normalization and conservative reconciliation status"
+  ],
+  "support_obligation": [
+    "unresolved mappings require human configuration",
+    "malformed source evidence requires source correction",
+    "schema failures and incomplete batches require investigation",
+    "late evidence may change previously viewed context"
+  ],
+  "rework": [],
+  "observed_lab_results": [
+    "normalized multi-system evidence combined into one deterministic cross-location briefing",
+    "data-quality exceptions limited product and labor comparisons",
+    "canonical location net sales remained available despite incomplete lower-level mapping",
+    "inventory reconciliation limits remained visible"
+  ]
+}

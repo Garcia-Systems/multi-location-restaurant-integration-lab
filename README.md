@@ -47,7 +47,7 @@ Code that could theoretically be reused is not automatically demonstrated reuse.
 
 ## Current scope and progression
 
-Chapters 0 through 9 are implemented. Chapter 9 makes cross-system exceptions, batch quality, and support obligations inspectable. The current progression is:
+Chapters 0 through 10 are implemented. Chapter 10 turns canonical evidence, completeness, and exceptions into a compact management briefing. The current progression is:
 
 ```text
 Chapter 0 — The Hypothesis                         COMPLETE
@@ -60,7 +60,8 @@ Chapter 6 — Add Reservations and Demand Context    COMPLETE
 Chapter 7 — Add Labor                              COMPLETE
 Chapter 8 — Add Inventory                          COMPLETE
 Chapter 9 — Exceptions and Data Quality            COMPLETE
-Chapter 10 — The Group Management Briefing         NEXT
+Chapter 10 — The Group Management Briefing         COMPLETE
+Chapter 11 — Production Integration Engineering    NEXT
 ```
 
 Later chapters remain intentionally absent and should follow this experimental flow:
@@ -107,6 +108,7 @@ restaurant-integration-lab reservations
 restaurant-integration-lab labor
 restaurant-integration-lab inventory
 restaurant-integration-lab exceptions
+restaurant-integration-lab briefing
 # Equivalent without the installed script:
 python -m restaurant_integration_lab hypothesis
 python -m restaurant_integration_lab discovery
@@ -118,6 +120,7 @@ python -m restaurant_integration_lab reservations
 python -m restaurant_integration_lab labor
 python -m restaurant_integration_lab inventory
 python -m restaurant_integration_lab exceptions
+python -m restaurant_integration_lab briefing
 ```
 
 Run the tests:
@@ -126,4 +129,4 @@ Run the tests:
 pytest
 ```
 
-Read [Chapter 0](docs/chapters/00-the-hypothesis.md) for the assumptions and evidence rules, [Chapter 1](docs/chapters/01-discovery-before-architecture.md) for the system landscape, [Chapter 2](docs/chapters/02-shared-operational-model.md) for the canonical boundary, [Chapter 3](docs/chapters/03-build-location-1.md) for the first source-specific ingestion, [Chapter 4](docs/chapters/04-add-location-2.md) for the first demonstrated reuse experiment, [Chapter 5](docs/chapters/05-normalize-across-locations.md) for explicit cross-location normalization, [Chapter 6](docs/chapters/06-reservations-and-demand-context.md) for reservation demand context, [Chapter 7](docs/chapters/07-add-labor.md) for labor evidence, and [Chapter 8](docs/chapters/08-add-inventory.md) for explicit inventory identity, units, and reconciliation boundaries. Read [Chapter 9](docs/chapters/09-exceptions-and-data-quality.md) for the unified exception and batch-quality workflow.
+Read [Chapter 0](docs/chapters/00-the-hypothesis.md) for the assumptions and evidence rules, [Chapter 1](docs/chapters/01-discovery-before-architecture.md) for the system landscape, [Chapter 2](docs/chapters/02-shared-operational-model.md) for the canonical boundary, [Chapter 3](docs/chapters/03-build-location-1.md) for the first source-specific ingestion, [Chapter 4](docs/chapters/04-add-location-2.md) for the first demonstrated reuse experiment, [Chapter 5](docs/chapters/05-normalize-across-locations.md) for explicit cross-location normalization, [Chapter 6](docs/chapters/06-reservations-and-demand-context.md) for reservation demand context, [Chapter 7](docs/chapters/07-add-labor.md) for labor evidence, [Chapter 8](docs/chapters/08-add-inventory.md) for explicit inventory identity, units, and reconciliation boundaries, and [Chapter 9](docs/chapters/09-exceptions-and-data-quality.md) for the unified exception workflow. [Chapter 10](docs/chapters/10-group-management-briefing.md) documents the deterministic group management briefing.
