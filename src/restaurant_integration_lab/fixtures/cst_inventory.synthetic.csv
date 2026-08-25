@@ -1,0 +1,7 @@
+# SYNTHETIC FIXTURE - CST Weekly Count spreadsheet export
+Row ID,Store,Ingredient Name,Qty,UOM,Count Date,Record Type,Category,Exported At
+CST-001,CST,Beef Patties,12,EACH,08/24/2026,PHYSICAL_COUNT,protein,08/25/2026 09:00
+CST-002,CST,Shucked Oyster Meat,16,OZ,08/24/2026,PHYSICAL_COUNT,seafood,08/25/2026 09:00
+CST-003,CST,Beef Patties,2,,08/24/2026,PHYSICAL_COUNT,protein,08/25/2026 09:00
+CST-004,CST,Mystery Sauce,6,jug,08/24/2026,PHYSICAL_COUNT,sauce,08/25/2026 09:00
+CST-005,CST,Ambiguous Patty,3,EACH,08/24/2026,PHYSICAL_COUNT,protein,08/25/2026 09:00
