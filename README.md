@@ -47,16 +47,17 @@ Code that could theoretically be reused is not automatically demonstrated reuse.
 
 ## Current scope and progression
 
-Chapters 0 through 5 are implemented. Chapter 5 makes the normalization boundary and its exclusions executable. The current progression is:
+Chapters 0 through 6 are implemented. Chapter 6 tests cross-system integration with reservation evidence and deterministic demand context. The current progression is:
 
 ```text
-Chapter 0 — The Hypothesis                      COMPLETE
-Chapter 1 — Discovery Before Architecture       COMPLETE
-Chapter 2 — Define the Shared Operational Model COMPLETE
-Chapter 3 — Build Location #1                   COMPLETE
-Chapter 4 — Add Location #2                     COMPLETE
-Chapter 5 — Normalize Across Locations          COMPLETE
-Chapter 6 — Add Reservations and Demand Context NEXT
+Chapter 0 — The Hypothesis                         COMPLETE
+Chapter 1 — Discovery Before Architecture          COMPLETE
+Chapter 2 — Define the Shared Operational Model    COMPLETE
+Chapter 3 — Build Location #1                      COMPLETE
+Chapter 4 — Add Location #2                        COMPLETE
+Chapter 5 — Normalize Across Locations             COMPLETE
+Chapter 6 — Add Reservations and Demand Context    COMPLETE
+Chapter 7 — Add Labor                              NEXT
 ```
 
 Later chapters remain intentionally absent and should follow this experimental flow:
@@ -99,6 +100,7 @@ restaurant-integration-lab model
 restaurant-integration-lab location1
 restaurant-integration-lab location2
 restaurant-integration-lab normalize
+restaurant-integration-lab reservations
 # Equivalent without the installed script:
 python -m restaurant_integration_lab hypothesis
 python -m restaurant_integration_lab discovery
@@ -106,6 +108,7 @@ python -m restaurant_integration_lab model
 python -m restaurant_integration_lab location1
 python -m restaurant_integration_lab location2
 python -m restaurant_integration_lab normalize
+python -m restaurant_integration_lab reservations
 ```
 
 Run the tests:
@@ -114,4 +117,4 @@ Run the tests:
 pytest
 ```
 
-Read [Chapter 0](docs/chapters/00-the-hypothesis.md) for the assumptions and evidence rules, [Chapter 1](docs/chapters/01-discovery-before-architecture.md) for the system landscape, [Chapter 2](docs/chapters/02-shared-operational-model.md) for the canonical boundary, [Chapter 3](docs/chapters/03-build-location-1.md) for the first source-specific ingestion, [Chapter 4](docs/chapters/04-add-location-2.md) for the first demonstrated reuse experiment, then [Chapter 5](docs/chapters/05-normalize-across-locations.md) for explicit cross-location normalization.
+Read [Chapter 0](docs/chapters/00-the-hypothesis.md) for the assumptions and evidence rules, [Chapter 1](docs/chapters/01-discovery-before-architecture.md) for the system landscape, [Chapter 2](docs/chapters/02-shared-operational-model.md) for the canonical boundary, [Chapter 3](docs/chapters/03-build-location-1.md) for the first source-specific ingestion, [Chapter 4](docs/chapters/04-add-location-2.md) for the first demonstrated reuse experiment, then [Chapter 5](docs/chapters/05-normalize-across-locations.md) for explicit cross-location normalization, and [Chapter 6](docs/chapters/06-reservations-and-demand-context.md) for reservation demand context and the first cross-system reuse experiment.

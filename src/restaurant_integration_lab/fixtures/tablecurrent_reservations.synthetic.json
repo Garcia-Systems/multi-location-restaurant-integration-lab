@@ -1,0 +1,16 @@
+{
+  "fixture_notice": "SYNTHETIC LAB DATA — NOT A REAL TABLECURRENT API RESPONSE",
+  "source_system": "TableCurrent",
+  "records": [
+    {"booking_id":"R-100","venue_id":"14","reserved_at":"2026-08-24T18:00:00","party_size":"4","state":"confirmed","created_at":"2026-08-01T12:00:00"},
+    {"booking_id":"R-101","venue_id":"14","reserved_at":"2026-08-24T20:00:00","party_size":"2","state":"finished","created_at":"2026-08-02T12:00:00"},
+    {"booking_id":"R-102","venue_id":"14","reserved_at":"2026-08-25T01:00:00","party_size":"3","state":"cancelled_by_guest","created_at":"2026-08-03T12:00:00"},
+    {"booking_id":"B-200","venue_id":"BHO-RVA","reserved_at":"2026-08-24T19:30:00","party_size":"5","state":"seated","created_at":"2026-08-04T12:00:00"},
+    {"booking_id":"B-201","venue_id":"BHO-RVA","reserved_at":"2026-08-24T21:00:00","party_size":"2","state":"did_not_arrive","created_at":"2026-08-04T13:00:00"},
+    {"booking_id":"R-100","venue_id":"14","reserved_at":"2026-08-24T18:00:00","party_size":"4","state":"confirmed","created_at":"2026-08-01T12:00:00"},
+    {"booking_id":"R-103","venue_id":"14","reserved_at":"2026-08-24T22:00:00","party_size":"many","state":"confirmed","created_at":"2026-08-05T12:00:00"},
+    {"booking_id":"R-104","venue_id":"14","reserved_at":"2026-08-24T22:30:00","party_size":"2","state":"pending_review","created_at":"2026-08-05T12:00:00"},
+    {"booking_id":"R-105","venue_id":"UNKNOWN","reserved_at":"2026-08-24T23:00:00","party_size":"2","state":"confirmed","created_at":"2026-08-05T12:00:00"},
+    {"booking_id":"R-106","venue_id":"14","reserved_at":"not-a-timestamp","party_size":"2","state":"confirmed","created_at":"2026-08-05T12:00:00"}
+  ]
+}
