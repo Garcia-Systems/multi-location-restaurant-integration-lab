@@ -1,0 +1,17 @@
+{
+  "fixture_notice": "SYNTHETIC LAB DATA — NOT A REAL HARBORTILL EXPORT",
+  "source_system": "HarborTill RRK",
+  "source_interface": "synthetic REST API JSON v3 fixture",
+  "records": [
+    {"transaction_id": "CHK-1001", "line_id": "1", "transaction_timestamp": "2026-08-25T00:30:00", "business_date": "2026-08-24", "location_id": "POS-WBG-14", "item_id": "MENU-771", "item_name": "James River Oysters", "quantity": "2", "gross_sales": "24.20", "discounts": "2.20", "net_sales": "22.00", "category": "Raw Bar"},
+    {"transaction_id": "CHK-1002", "line_id": "1", "transaction_timestamp": "2026-08-24T19:10:00", "business_date": "2026-08-24", "location_id": "POS-WBG-14", "item_id": "MENU-204", "item_name": "Bistro Steak", "quantity": "1", "gross_sales": "31.50", "discounts": "0.00", "net_sales": "31.50", "category": "Entrees"},
+    {"transaction_id": "CHK-1003", "line_id": "1", "transaction_timestamp": "2026-08-24T20:15:00", "business_date": "2026-08-24", "location_id": "POS-WBG-14", "item_id": "MENU-771", "item_name": "House Oysters", "quantity": "1", "gross_sales": "12.10", "discounts": "0.00", "net_sales": "12.10", "category": "Raw Bar"},
+    {"transaction_id": "CHK-1004", "line_id": "1", "transaction_timestamp": "2026-08-25T01:15:00", "business_date": "2026-08-24", "location_id": "POS-WBG-14", "item_id": "MENU-910", "item_name": "River Rum Punch", "quantity": "2", "gross_sales": "20.00", "discounts": "2.00", "net_sales": "18.00", "category": "Bar"},
+    {"transaction_id": "CHK-1005", "line_id": "1", "transaction_timestamp": "2026-08-24T21:00:00", "business_date": "2026-08-24", "location_id": "POS-WBG-14", "item_id": "MENU-NEW", "item_name": "Chef Special", "quantity": "1", "gross_sales": "19.00", "discounts": "0.00", "net_sales": "19.00", "category": "Entrees"},
+    {"transaction_id": "CHK-1006", "line_id": "1", "transaction_timestamp": "2026-08-24T21:10:00", "business_date": "2026-08-24", "location_id": "POS-WBG-14", "item_id": "MENU-204", "item_name": "Bistro Steak", "quantity": "1", "gross_sales": "thirty-one", "discounts": "0.00", "net_sales": "31.50", "category": "Entrees"},
+    {"transaction_id": "", "line_id": "1", "transaction_timestamp": "2026-08-24T21:20:00", "business_date": "2026-08-24", "location_id": "POS-WBG-14", "item_id": "MENU-204", "item_name": "Bistro Steak", "quantity": "1", "gross_sales": "31.50", "discounts": "0.00", "net_sales": "31.50", "category": "Entrees"},
+    {"transaction_id": "CHK-1008", "line_id": "1", "transaction_timestamp": "2026-08-24T21:30:00", "business_date": "2026-08-24", "location_id": "CST-02", "item_id": "MENU-204", "item_name": "Bistro Steak", "quantity": "1", "gross_sales": "31.50", "discounts": "0.00", "net_sales": "31.50", "category": "Entrees"},
+    {"transaction_id": "CHK-1002", "line_id": "1", "transaction_timestamp": "2026-08-24T19:10:00", "business_date": "2026-08-24", "location_id": "POS-WBG-14", "item_id": "MENU-204", "item_name": "Bistro Steak", "quantity": "1", "gross_sales": "31.50", "discounts": "0.00", "net_sales": "31.50", "category": "Entrees"},
+    {"transaction_id": "CHK-1010", "line_id": "1", "transaction_timestamp": "not-a-timestamp", "business_date": "2026-08-24", "location_id": "POS-WBG-14", "item_id": "MENU-910", "item_name": "River Rum Punch", "quantity": "1", "gross_sales": "10.00", "discounts": "0.00", "net_sales": "10.00", "category": "Bar"}
+  ]
+}

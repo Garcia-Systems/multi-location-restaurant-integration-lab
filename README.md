@@ -47,13 +47,14 @@ Code that could theoretically be reused is not automatically demonstrated reuse.
 
 ## Current scope and progression
 
-Chapters 0 through 2 are implemented. Chapter 2 adds a compact canonical boundary over synthetic evidence without implementing integrations. The current progression is:
+Chapters 0 through 3 are implemented. Chapter 3 adds the first narrow, source-specific integration for River & Rail Kitchen. The current progression is:
 
 ```text
 Chapter 0 — The Hypothesis                      COMPLETE
 Chapter 1 — Discovery Before Architecture       COMPLETE
 Chapter 2 — Define the Shared Operational Model COMPLETE
-Chapter 3 — Build Location #1                   NEXT
+Chapter 3 — Build Location #1                   COMPLETE
+Chapter 4 — Add Location #2                     NEXT
 ```
 
 Later chapters remain intentionally absent and should follow this experimental flow:
@@ -93,10 +94,12 @@ python -m pip install -e '.[test]'
 restaurant-integration-lab hypothesis
 restaurant-integration-lab discovery
 restaurant-integration-lab model
+restaurant-integration-lab location1
 # Equivalent without the installed script:
 python -m restaurant_integration_lab hypothesis
 python -m restaurant_integration_lab discovery
 python -m restaurant_integration_lab model
+python -m restaurant_integration_lab location1
 ```
 
 Run the tests:
@@ -105,4 +108,4 @@ Run the tests:
 pytest
 ```
 
-Read [Chapter 0](docs/chapters/00-the-hypothesis.md) for the assumptions and evidence rules, [Chapter 1](docs/chapters/01-discovery-before-architecture.md) for the system landscape, readiness gates, and build-versus-buy questions, then [Chapter 2](docs/chapters/02-shared-operational-model.md) for explicit identity, provenance, availability, and unit boundaries.
+Read [Chapter 0](docs/chapters/00-the-hypothesis.md) for the assumptions and evidence rules, [Chapter 1](docs/chapters/01-discovery-before-architecture.md) for the system landscape, [Chapter 2](docs/chapters/02-shared-operational-model.md) for the canonical boundary, then [Chapter 3](docs/chapters/03-build-location-1.md) for the first source-specific ingestion experiment.
