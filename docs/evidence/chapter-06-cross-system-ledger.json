@@ -1,0 +1,12 @@
+{
+  "chapter": 6,
+  "evidence_type": "OBSERVED LAB RESULT",
+  "engineering_hours": null,
+  "demonstrated_cross_system_reuse": ["Location", "BusinessDate", "SourceIdentity resolution", "Provenance", "IngestionException", "IngestionEvent"],
+  "domain_specific_reuse": ["POS parsers", "sales calculations", "sales-shaped IngestionResult"],
+  "configuration_reuse": ["explicit TableCurrent venue-to-canonical-location mappings", "04:00 business-day rule"],
+  "new_system_specific_work": ["TableCurrent JSON parser", "reservation status mapping", "party-size validation", "reservation duplicate semantics", "demand-context measures", "sales/reservation join"],
+  "rework": ["A separate ReservationIngestionResult records that the prior IngestionResult was POS/sales-specific"],
+  "modified_modules": ["ingestion.py exception categories", "cli.py command routing"],
+  "fixture": "tablecurrent_reservations.synthetic.json"
+}
