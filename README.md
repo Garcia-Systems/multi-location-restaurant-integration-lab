@@ -47,7 +47,7 @@ Code that could theoretically be reused is not automatically demonstrated reuse.
 
 ## Current scope and progression
 
-Chapters 0 through 14 are implemented. Chapter 14 compares the fictional delivery model with observed implementation structure without inventing engineering time. The current progression is:
+Chapters 0 through 15 are implemented. Chapter 15 tests the executable custom scope against fictional capability-based alternatives without claiming market validation. The current progression is:
 
 ```text
 Chapter 0 — The Hypothesis                         COMPLETE
@@ -65,7 +65,8 @@ Chapter 11 — Production Integration Engineering    COMPLETE
 Chapter 12 — Onboard Another Restaurant            COMPLETE
 Chapter 13 — Standardization Stress Test            COMPLETE
 Chapter 14 — Delivery Economics From Engineering Evidence COMPLETE
-Chapter 15 — Build vs. Buy Revisited                NEXT
+Chapter 15 — Build vs. Buy Revisited                COMPLETE
+Chapter 16 — Capstone: Project, Product, or Bad Idea? NEXT
 ```
 
 Later chapters remain intentionally absent and should follow this experimental flow:
@@ -118,6 +119,7 @@ restaurant-integration-lab readiness
 restaurant-integration-lab onboard
 restaurant-integration-lab stress-test
 restaurant-integration-lab economics
+restaurant-integration-lab build-vs-buy
 # Equivalent without the installed script:
 python -m restaurant_integration_lab hypothesis
 python -m restaurant_integration_lab discovery
@@ -135,6 +137,7 @@ python -m restaurant_integration_lab readiness
 python -m restaurant_integration_lab onboard
 python -m restaurant_integration_lab stress-test
 python -m restaurant_integration_lab economics
+python -m restaurant_integration_lab build-vs-buy
 ```
 
 Run the tests:
@@ -143,4 +146,4 @@ Run the tests:
 pytest
 ```
 
-Read [Chapter 0](docs/chapters/00-the-hypothesis.md) for the assumptions and evidence rules, [Chapter 1](docs/chapters/01-discovery-before-architecture.md) for the original five-location system landscape, [Chapter 2](docs/chapters/02-shared-operational-model.md) for the canonical boundary, [Chapter 3](docs/chapters/03-build-location-1.md) for the first source-specific ingestion, [Chapter 4](docs/chapters/04-add-location-2.md) for the first demonstrated reuse experiment, [Chapter 5](docs/chapters/05-normalize-across-locations.md) for explicit cross-location normalization, [Chapter 6](docs/chapters/06-reservations-and-demand-context.md) for reservation demand context, [Chapter 7](docs/chapters/07-add-labor.md) for labor evidence, [Chapter 8](docs/chapters/08-add-inventory.md) for explicit inventory identity, units, and reconciliation boundaries, and [Chapter 9](docs/chapters/09-exceptions-and-data-quality.md) for the unified exception workflow. [Chapter 10](docs/chapters/10-group-management-briefing.md) documents the deterministic group management briefing. [Chapter 11](docs/chapters/11-production-integration-engineering.md) demonstrates local scheduling, credentials, idempotency, retries, observability, recovery, and readiness. [Chapter 12](docs/chapters/12-onboard-another-restaurant.md) executes the sixth-location marginal onboarding experiment. [Chapter 13](docs/chapters/13-standardization-stress-test.md) contrasts that standardized onboarding with a non-standard acquisition and records concrete reuse erosion. [Chapter 14](docs/chapters/14-delivery-economics-from-engineering-evidence.md) maps the accumulated structure to the original modeled categories, sensitivity boundaries, and a conditional delivery-economic assessment while leaving build versus buy unresolved.
+Read [Chapter 0](docs/chapters/00-the-hypothesis.md) for the assumptions and evidence rules, [Chapter 1](docs/chapters/01-discovery-before-architecture.md) for the original five-location system landscape, [Chapter 2](docs/chapters/02-shared-operational-model.md) for the canonical boundary, [Chapter 3](docs/chapters/03-build-location-1.md) for the first source-specific ingestion, [Chapter 4](docs/chapters/04-add-location-2.md) for the first demonstrated reuse experiment, [Chapter 5](docs/chapters/05-normalize-across-locations.md) for explicit cross-location normalization, [Chapter 6](docs/chapters/06-reservations-and-demand-context.md) for reservation demand context, [Chapter 7](docs/chapters/07-add-labor.md) for labor evidence, [Chapter 8](docs/chapters/08-add-inventory.md) for explicit inventory identity, units, and reconciliation boundaries, and [Chapter 9](docs/chapters/09-exceptions-and-data-quality.md) for the unified exception workflow. [Chapter 10](docs/chapters/10-group-management-briefing.md) documents the deterministic group management briefing. [Chapter 11](docs/chapters/11-production-integration-engineering.md) demonstrates local scheduling, credentials, idempotency, retries, observability, recovery, and readiness. [Chapter 12](docs/chapters/12-onboard-another-restaurant.md) executes the sixth-location marginal onboarding experiment. [Chapter 13](docs/chapters/13-standardization-stress-test.md) contrasts that standardized onboarding with a non-standard acquisition and records concrete reuse erosion. [Chapter 14](docs/chapters/14-delivery-economics-from-engineering-evidence.md) maps structure to the fictional economics. [Chapter 15](docs/chapters/15-build-vs-buy-revisited.md) compares the demonstrated custom scope with fictional SaaS, BI, automation, spreadsheet/process, narrow-custom, full-custom, and defer alternatives while leaving the final opportunity verdict unresolved.
