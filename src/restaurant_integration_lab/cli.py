@@ -4,6 +4,7 @@ from collections.abc import Sequence
 
 from .models import CASE_1, CASE_2, OpportunityScenario
 from .discovery import discovery_report
+from .model_demo import model_report
 
 
 def _currency(value: int) -> str:
@@ -59,10 +60,11 @@ def main(argv: Sequence[str] | None = None) -> int:
 
     arguments = list(sys.argv[1:] if argv is None else argv)
     command = arguments[0] if arguments else "hypothesis"
-    if len(arguments) > 1 or command not in {"hypothesis", "discovery"}:
-        print("usage: restaurant-integration-lab [hypothesis|discovery]", file=sys.stderr)
+    if len(arguments) > 1 or command not in {"hypothesis", "discovery", "model"}:
+        print("usage: restaurant-integration-lab [hypothesis|discovery|model]", file=sys.stderr)
         return 2
-    print(discovery_report() if command == "discovery" else comparison_report())
+    reports = {"hypothesis": comparison_report, "discovery": discovery_report, "model": model_report}
+    print(reports[command]())
     return 0
 
 
