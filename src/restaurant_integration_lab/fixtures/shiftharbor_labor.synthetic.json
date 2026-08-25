@@ -1,0 +1,18 @@
+{
+  "fixture_notice": "SYNTHETIC LAB DATA — NOT A REAL SHIFTHARBOR API RESPONSE",
+  "source_system": "ShiftHarbor",
+  "records": [
+    {"shift_id":"SH-100","location_id":"WILLIAMSBURG_MAIN","worker_id":"SYN-W01","job_code":"SERV","clock_in":"2026-08-24T18:00:00","clock_out":"2026-08-25T01:30:00","scheduled_hours":"8.00","worked_hours":"7.50","labor_cost":"150.00","status":"worked"},
+    {"shift_id":"SH-101","location_id":"WILLIAMSBURG_MAIN","worker_id":"SYN-W02","job_code":"COOK","clock_in":"2026-08-24T17:00:00","clock_out":"2026-08-24T21:00:00","scheduled_hours":"4.00","worked_hours":"4.00","labor_cost":"100.00","status":"worked"},
+    {"shift_id":"SH-102","location_id":"WILLIAMSBURG_MAIN","worker_id":"SYN-W03","job_code":"MGR","clock_in":"2026-08-25T01:00:00","clock_out":"2026-08-25T01:30:00","scheduled_hours":"1.00","worked_hours":"0.50","labor_cost":"25.00","status":"worked"},
+    {"shift_id":"SH-200","location_id":"CST_RVA_02","worker_id":"SYN-W11","job_code":"SERVER","clock_in":"2026-08-25T11:00:00","clock_out":"2026-08-25T16:00:00","scheduled_hours":"5.00","worked_hours":"5.00","labor_cost":"90.00","status":"worked"},
+    {"shift_id":"SH-201","location_id":"CST_RVA_02","worker_id":"SYN-W12","job_code":"KITCHEN","clock_in":"2026-08-25T11:30:00","clock_out":"2026-08-25T14:30:00","scheduled_hours":"4.00","worked_hours":"3.00","labor_cost":null,"status":"worked"},
+    {"shift_id":"SH-100","location_id":"WILLIAMSBURG_MAIN","worker_id":"SYN-W01","job_code":"SERV","clock_in":"2026-08-24T18:00:00","clock_out":"2026-08-25T01:30:00","scheduled_hours":"8.00","worked_hours":"7.50","labor_cost":"150.00","status":"worked"},
+    {"shift_id":"SH-300","location_id":"WILLIAMSBURG_MAIN","worker_id":"SYN-W04","job_code":"SERV","clock_in":"2026-08-24T18:00:00","clock_out":"2026-08-24T19:00:00","scheduled_hours":"1.00","worked_hours":"-1.00","labor_cost":"20.00","status":"worked"},
+    {"shift_id":"SH-301","location_id":"WILLIAMSBURG_MAIN","worker_id":"SYN-W05","job_code":"SERV","clock_in":"2026-08-24T18:00:00","clock_out":"2026-08-24T19:00:00","scheduled_hours":"1.00","worked_hours":"many","labor_cost":"20.00","status":"worked"},
+    {"shift_id":"SH-302","location_id":"UNKNOWN","worker_id":"SYN-W06","job_code":"SERV","clock_in":"2026-08-24T18:00:00","clock_out":"2026-08-24T19:00:00","scheduled_hours":"1.00","worked_hours":"1.00","labor_cost":"20.00","status":"worked"},
+    {"shift_id":"SH-303","location_id":"WILLIAMSBURG_MAIN","worker_id":"SYN-W07","job_code":"BARTENDER_UNKNOWN","clock_in":"2026-08-24T18:00:00","clock_out":"2026-08-24T19:00:00","scheduled_hours":"1.00","worked_hours":"1.00","labor_cost":"20.00","status":"worked"},
+    {"shift_id":"SH-304","location_id":"WILLIAMSBURG_MAIN","worker_id":"SYN-W08","job_code":"SERV","clock_in":"2026-08-24T18:00:00","clock_out":null,"scheduled_hours":"1.00","worked_hours":"1.00","labor_cost":"20.00","status":"worked"},
+    {"shift_id":"SH-305","location_id":"WILLIAMSBURG_MAIN","worker_id":"SYN-W09","job_code":"SERV","clock_in":"2026-08-24T18:00:00","clock_out":"2026-08-24T19:00:00","scheduled_hours":"1.00","worked_hours":"1.00","labor_cost":"-20.00","status":"worked"}
+  ]
+}
