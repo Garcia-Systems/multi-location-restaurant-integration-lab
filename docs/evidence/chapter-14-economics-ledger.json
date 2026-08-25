@@ -1,0 +1,24 @@
+{
+  "chapter": 14,
+  "notice": "MODELED ASSUMPTIONS COMPARED WITH OBSERVED IMPLEMENTATION STRUCTURE; NO MEASURED ENGINEERING TIME",
+  "original_case_2": {
+    "label": "MODELED ASSUMPTION",
+    "recoverable_value": 67070,
+    "implementation_price": 42000,
+    "customer_payback_months": 8.7,
+    "delivery_hours": {"shared_engineering": 100, "incremental_location": 50, "customer_exceptions": 30, "qa_testing": 24, "deployment": 10, "rework": 20, "total": 234}
+  },
+  "measured_engineering_hours": null,
+  "category_assessments": {
+    "shared_engineering": "SUPPORTED IN STRUCTURE",
+    "incremental_location": "HIGHLY CUSTOMER-DEPENDENT",
+    "customer_exceptions": "HIGHLY CUSTOMER-DEPENDENT",
+    "qa_testing": "APPEARS UNDERSTATED",
+    "deployment_operations": "APPEARS UNDERSTATED",
+    "rework": "PLAUSIBLE BUT UNMEASURED"
+  },
+  "marginal_comparison": {"JRH-006": "MOSTLY STANDARDIZED ONBOARDING", "JRH-007": "NON-STANDARD ACQUISITION"},
+  "scenario_labels": {"original": "MODELED ASSUMPTION", "standardized": "SENSITIVITY ASSUMPTION", "non_standard": "SENSITIVITY ASSUMPTION"},
+  "provider_boundary": {"maximum_delivery_cost": 42000, "maximum_delivery_hours": null, "reason": "No modeled delivery cost per hour exists."},
+  "assessment": {"standardized": "PROMISING STRUCTURE, TIME UNMEASURED", "non_standard": "HIGH DELIVERY VARIABILITY", "original_234_hours": "NOT VALIDATED", "build_versus_buy": "UNRESOLVED"}
+}

@@ -16,6 +16,7 @@ from .briefing import briefing_report
 from .operations import operations_report, readiness_report
 from .onboarding import onboarding_report
 from .stress_test import stress_test_report
+from .economics import economics_report
 
 
 def _currency(value: int) -> str:
@@ -71,8 +72,8 @@ def main(argv: Sequence[str] | None = None) -> int:
 
     arguments = list(sys.argv[1:] if argv is None else argv)
     command = arguments[0] if arguments else "hypothesis"
-    if len(arguments) > 1 or command not in {"hypothesis", "discovery", "model", "location1", "location2", "normalize", "reservations", "labor", "inventory", "exceptions", "briefing", "operations", "readiness", "onboard", "stress-test"}:
-        print("usage: restaurant-integration-lab [hypothesis|discovery|model|location1|location2|normalize|reservations|labor|inventory|exceptions|briefing|operations|readiness|onboard|stress-test]", file=sys.stderr)
+    if len(arguments) > 1 or command not in {"hypothesis", "discovery", "model", "location1", "location2", "normalize", "reservations", "labor", "inventory", "exceptions", "briefing", "operations", "readiness", "onboard", "stress-test", "economics"}:
+        print("usage: restaurant-integration-lab [hypothesis|discovery|model|location1|location2|normalize|reservations|labor|inventory|exceptions|briefing|operations|readiness|onboard|stress-test|economics]", file=sys.stderr)
         return 2
     reports = {"hypothesis": comparison_report, "discovery": discovery_report,
                "model": model_report, "location1": location1_report,
@@ -81,7 +82,7 @@ def main(argv: Sequence[str] | None = None) -> int:
                "inventory": inventory_report, "exceptions": exception_report,
                "briefing": briefing_report, "operations": operations_report,
                "readiness": readiness_report, "onboard": onboarding_report,
-               "stress-test": stress_test_report}
+               "stress-test": stress_test_report, "economics": economics_report}
     print(reports[command]())
     return 0
 
