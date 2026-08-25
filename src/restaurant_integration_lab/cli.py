@@ -14,6 +14,7 @@ from .inventory import inventory_report
 from .exceptions import exception_report
 from .briefing import briefing_report
 from .operations import operations_report, readiness_report
+from .onboarding import onboarding_report
 
 
 def _currency(value: int) -> str:
@@ -69,8 +70,8 @@ def main(argv: Sequence[str] | None = None) -> int:
 
     arguments = list(sys.argv[1:] if argv is None else argv)
     command = arguments[0] if arguments else "hypothesis"
-    if len(arguments) > 1 or command not in {"hypothesis", "discovery", "model", "location1", "location2", "normalize", "reservations", "labor", "inventory", "exceptions", "briefing", "operations", "readiness"}:
-        print("usage: restaurant-integration-lab [hypothesis|discovery|model|location1|location2|normalize|reservations|labor|inventory|exceptions|briefing|operations|readiness]", file=sys.stderr)
+    if len(arguments) > 1 or command not in {"hypothesis", "discovery", "model", "location1", "location2", "normalize", "reservations", "labor", "inventory", "exceptions", "briefing", "operations", "readiness", "onboard"}:
+        print("usage: restaurant-integration-lab [hypothesis|discovery|model|location1|location2|normalize|reservations|labor|inventory|exceptions|briefing|operations|readiness|onboard]", file=sys.stderr)
         return 2
     reports = {"hypothesis": comparison_report, "discovery": discovery_report,
                "model": model_report, "location1": location1_report,
@@ -78,7 +79,7 @@ def main(argv: Sequence[str] | None = None) -> int:
                "reservations": reservations_report, "labor": labor_report,
                "inventory": inventory_report, "exceptions": exception_report,
                "briefing": briefing_report, "operations": operations_report,
-               "readiness": readiness_report}
+               "readiness": readiness_report, "onboard": onboarding_report}
     print(reports[command]())
     return 0
 

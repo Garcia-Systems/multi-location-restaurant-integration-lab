@@ -1,0 +1,9 @@
+{
+  "notice": "SYNTHETIC REFERENCES ONLY — NO SECRET VALUES",
+  "integrations": [
+    {"customer_id":"JRH","customer_name":"James River Hospitality Group","job_id":"pos-tgc-daily","source_system":"HarborTill TGC","location_id":"JRH-006","interface_type":"SFTP CSV SIMULATION","enabled":true,"cadence":"DAILY","credential_ref":"secret://jrh/pos/location-6","input_ref":"src/restaurant_integration_lab/fixtures/jrh006_harbortill_sales.synthetic.csv","schema_version":"harbortill-csv-v2","retry_policy_ref":"standard-v1"},
+    {"customer_id":"JRH","customer_name":"James River Hospitality Group","job_id":"reservations-tgc-daily","source_system":"TableCurrent","location_id":"JRH-006","interface_type":"API JSON SIMULATION","enabled":true,"cadence":"DAILY","credential_ref":"secret://jrh/reservations/group","input_ref":"src/restaurant_integration_lab/fixtures/jrh006_onboarding.synthetic.json","schema_version":"tablecurrent-reservations-v1","retry_policy_ref":"standard-v1"},
+    {"customer_id":"JRH","customer_name":"James River Hospitality Group","job_id":"labor-tgc-daily","source_system":"ShiftHarbor","location_id":"JRH-006","interface_type":"API JSON SIMULATION","enabled":true,"cadence":"DAILY","credential_ref":"secret://jrh/labor/group","input_ref":"src/restaurant_integration_lab/fixtures/jrh006_onboarding.synthetic.json","schema_version":"shiftharbor-labor-v1","retry_policy_ref":"standard-v1"},
+    {"customer_id":"JRH","customer_name":"James River Hospitality Group","job_id":"inventory-tgc-weekly","source_system":"StockPilot","location_id":"JRH-006","interface_type":"API JSON SIMULATION","enabled":true,"cadence":"WEEKLY","credential_ref":"secret://jrh/inventory/location-6","input_ref":"src/restaurant_integration_lab/fixtures/jrh006_onboarding.synthetic.json","schema_version":"stockpilot-count-v1","retry_policy_ref":"standard-v1"}
+  ]
+}
