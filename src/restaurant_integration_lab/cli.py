@@ -18,6 +18,7 @@ from .onboarding import onboarding_report
 from .stress_test import stress_test_report
 from .economics import economics_report
 from .build_vs_buy import build_vs_buy_report
+from .capstone import capstone_report
 
 
 def _currency(value: int) -> str:
@@ -73,8 +74,8 @@ def main(argv: Sequence[str] | None = None) -> int:
 
     arguments = list(sys.argv[1:] if argv is None else argv)
     command = arguments[0] if arguments else "hypothesis"
-    if len(arguments) > 1 or command not in {"hypothesis", "discovery", "model", "location1", "location2", "normalize", "reservations", "labor", "inventory", "exceptions", "briefing", "operations", "readiness", "onboard", "stress-test", "economics", "build-vs-buy"}:
-        print("usage: restaurant-integration-lab [hypothesis|discovery|model|location1|location2|normalize|reservations|labor|inventory|exceptions|briefing|operations|readiness|onboard|stress-test|economics|build-vs-buy]", file=sys.stderr)
+    if len(arguments) > 1 or command not in {"hypothesis", "discovery", "model", "location1", "location2", "normalize", "reservations", "labor", "inventory", "exceptions", "briefing", "operations", "readiness", "onboard", "stress-test", "economics", "build-vs-buy", "capstone"}:
+        print("usage: restaurant-integration-lab [hypothesis|discovery|model|location1|location2|normalize|reservations|labor|inventory|exceptions|briefing|operations|readiness|onboard|stress-test|economics|build-vs-buy|capstone]", file=sys.stderr)
         return 2
     reports = {"hypothesis": comparison_report, "discovery": discovery_report,
                "model": model_report, "location1": location1_report,
@@ -84,7 +85,7 @@ def main(argv: Sequence[str] | None = None) -> int:
                "briefing": briefing_report, "operations": operations_report,
                "readiness": readiness_report, "onboard": onboarding_report,
                "stress-test": stress_test_report, "economics": economics_report,
-               "build-vs-buy": build_vs_buy_report}
+               "build-vs-buy": build_vs_buy_report, "capstone": capstone_report}
     print(reports[command]())
     return 0
 
