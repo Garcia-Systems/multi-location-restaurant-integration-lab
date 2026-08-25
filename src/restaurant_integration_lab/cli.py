@@ -1,8 +1,9 @@
-"""Command-line comparison for Chapter 0."""
+"""Command-line reports for completed chapters."""
 
 from collections.abc import Sequence
 
 from .models import CASE_1, CASE_2, OpportunityScenario
+from .discovery import discovery_report
 
 
 def _currency(value: int) -> str:
@@ -52,13 +53,18 @@ def comparison_report() -> str:
 
 
 def main(argv: Sequence[str] | None = None) -> int:
-    """Print Chapter 0. ``argv`` is reserved for future chapter commands."""
+    """Print the requested chapter report; retain Chapter 0 as the default."""
 
-    del argv
-    print(comparison_report())
+    import sys
+
+    arguments = list(sys.argv[1:] if argv is None else argv)
+    command = arguments[0] if arguments else "hypothesis"
+    if len(arguments) > 1 or command not in {"hypothesis", "discovery"}:
+        print("usage: restaurant-integration-lab [hypothesis|discovery]", file=sys.stderr)
+        return 2
+    print(discovery_report() if command == "discovery" else comparison_report())
     return 0
 
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

@@ -47,7 +47,15 @@ Code that could theoretically be reused is not automatically demonstrated reuse.
 
 ## Current scope and progression
 
-Only **Chapter 0 — The Hypothesis** is implemented. It records the baseline, fictional locations, unknowns, evidence plan, and a small executable comparison. Later chapters are intentionally absent and should follow this experimental flow:
+Chapters 0 and 1 are implemented. Chapter 1 adds synthetic, executable discovery evidence without implementing integrations. The current progression is:
+
+```text
+Chapter 0 — The Hypothesis                         COMPLETE
+Chapter 1 — Discovery Before Architecture          COMPLETE
+Chapter 2 — Define the Shared Operational Model    NEXT
+```
+
+Later chapters remain intentionally absent and should follow this experimental flow:
 
 ```text
 CASEBOOK HYPOTHESIS
@@ -73,7 +81,7 @@ RECALCULATE THE OPPORTUNITY
 
 Possible eventual conclusions include **PROMISING — VALIDATE IN DISCOVERY**, **ONE-OFF CUSTOM PROJECT**, **BUY / CONFIGURE**, **INVESTIGATE**, **POOR TARGET CUSTOMER**, and **NO DEAL**.
 
-## Run Chapter 0
+## Run the completed chapters
 
 Python 3.12 or newer is required.
 
@@ -81,9 +89,11 @@ Python 3.12 or newer is required.
 python -m venv .venv
 source .venv/bin/activate
 python -m pip install -e '.[test]'
-restaurant-integration-lab
+restaurant-integration-lab hypothesis
+restaurant-integration-lab discovery
 # Equivalent without the installed script:
-python -m restaurant_integration_lab.cli
+python -m restaurant_integration_lab hypothesis
+python -m restaurant_integration_lab discovery
 ```
 
 Run the tests:
@@ -92,5 +102,4 @@ Run the tests:
 pytest
 ```
 
-Read [Chapter 0](docs/chapters/00-the-hypothesis.md) for the assumptions, evidence rules, and five-location profile.
-
+Read [Chapter 0](docs/chapters/00-the-hypothesis.md) for the assumptions and evidence rules, then [Chapter 1](docs/chapters/01-discovery-before-architecture.md) for the system landscape, readiness gates, and build-versus-buy questions.
