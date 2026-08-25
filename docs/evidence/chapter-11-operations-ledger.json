@@ -1,0 +1,29 @@
+{
+  "chapter": 11,
+  "evidence_type": "OBSERVED LAB STRUCTURE",
+  "engineering_hours": null,
+  "configuration_security": ["typed customer/source/location configuration", "credential provider boundary", "secret redaction"],
+  "scheduling": ["four job definitions", "deterministic daily/weekly due-job logic"],
+  "reliability": ["record idempotency", "batch idempotency", "conflicting replay detection", "failure-semantic retry policy", "partial success"],
+  "observability": ["structured operational events", "run/batch/exception/evidence correlation", "operational health summary"],
+  "failure_recovery": ["explicit mapping correction path", "corrected schema/source path"],
+  "deployment_documentation": ["local production-like configuration fixture", "operations command", "readiness command"],
+  "support_obligation_evidence": {
+    "job_types": 4,
+    "configured_source_integrations": 4,
+    "retry_classifications": 4,
+    "human_action_exception_categories": 4,
+    "credential_references": 4,
+    "schemas_to_keep_compatible": 4,
+    "operational_checks": 8,
+    "recovery_paths": 2
+  },
+  "modeled_assumptions_unchanged": {"deployment_hours": 10, "rework_reserve_hours": 20},
+  "observed_lab_results": [
+    "A successful parser was insufficient for repeatable operation without scheduling, idempotency, retry decisions, and run tracking.",
+    "Safe replay and conflicting replay required different operational handling.",
+    "Retry policy depended on failure semantics.",
+    "Credential references were used without exposing synthetic runtime values.",
+    "A failed job did not block unrelated due jobs."
+  ]
+}
