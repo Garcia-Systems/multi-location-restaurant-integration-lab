@@ -1,0 +1,21 @@
+{
+  "notice": "OBSERVABLE IMPLEMENTATION STRUCTURE ONLY — NO ENGINEERING HOURS",
+  "chapter": 3,
+  "artifacts": [
+    {"classification": "SHARED WORK", "artifact": "Chapter 2 canonical operational model", "chapter_3_status": "reused unchanged as the normalization destination"},
+    {"classification": "LOCATION-SPECIFIC WORK", "artifact": "LocationOneSalesImporter and RRK 04:00 business-date validation", "count": 2},
+    {"classification": "SYSTEM-SPECIFIC WORK", "artifact": "LocationOneHarborTillJsonParser and JSON v3 envelope/field rules", "source_specific_modules_added": 1, "source_specific_transformation_functions": 1},
+    {"classification": "CUSTOMER-SPECIFIC WORK", "artifact": "RRK location and menu identity configuration", "location_mapping_records_reused": 1, "product_mapping_records_required": 3},
+    {"classification": "TESTING", "artifact": "Synthetic mixed-quality fixture and Chapter 3 test module", "fixture_fields": 12, "fixture_rows": 10}
+  ],
+  "validation_rules": {
+    "structural": ["required values", "ISO timestamp", "ISO business date", "finite nonnegative decimals", "gross minus discounts equals net"],
+    "semantic_mapping": ["known RRK location", "explicit known product", "supplied date matches RRK 04:00 cutoff", "transaction plus line identity is unique"]
+  },
+  "exception_categories_encountered": ["MALFORMED RECORD", "UNKNOWN LOCATION", "UNKNOWN PRODUCT", "DUPLICATE"],
+  "configuration_entries_required": ["source namespace", "source location mapping", "three product mappings", "04:00 operational-day start"],
+  "reuse_baseline": {
+    "label": "REUSE CANDIDATES — NOT DEMONSTRATED REUSE",
+    "candidates": ["canonical model", "canonical calculation function", "explicit mapping mechanism", "exception representation"]
+  }
+}
