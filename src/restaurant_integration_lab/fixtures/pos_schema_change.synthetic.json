@@ -1,0 +1,6 @@
+{
+  "synthetic_fixture": true,
+  "batch_id": "POS-SCHEMA-20260825",
+  "expected_columns": ["transaction_id", "line_id", "net_sales"],
+  "actual_columns": ["check_number", "line_id", "net_sales"]
+}

@@ -1,0 +1,10 @@
+{
+  "chapter": 9,
+  "evidence_type": "OBSERVED LAB RESULT",
+  "new_shared_work": ["unified exception model", "batch result model", "cross-system exception reporting"],
+  "configuration_work": ["mapping fixes", "allowed status mappings"],
+  "source_specific_work": ["source-specific schema checks"],
+  "support_obligation": ["recurring human mapping requirement", "schema-change investigation", "incomplete-batch review"],
+  "rework": ["enriched earlier source exception abstraction at the shared reporting boundary"],
+  "commercial_time_estimates": null
+}
