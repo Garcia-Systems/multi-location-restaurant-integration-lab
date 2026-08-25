@@ -1,0 +1,7 @@
+{
+  "synthetic_fixture": true,
+  "batch_id": "RES-PARTIAL-20260825",
+  "partial": true,
+  "expected_records": 100,
+  "received_records": 61
+}
