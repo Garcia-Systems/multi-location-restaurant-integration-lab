@@ -6,13 +6,13 @@ This is an executable textbook and integration-engineering laboratory. It tests 
 
 The central customer is **James River Hospitality Group**, a fictional owner of seven deliberately non-identical restaurants after Chapter 13's acquisition stress test. All restaurants, vendors, systems, datasets, financial figures, and operational assumptions in this repository are fictional unless a source is explicitly provided.
 
-## The open hypothesis
+## The tested hypothesis
 
 The fictional cookbook modeled an independent restaurant as a **NO DEAL** ($10,392 recoverable value, 150 engineering hours, $15,000 price, and 24.4-month payback). It modeled the five-location group as **PROMISING — VALIDATE IN DISCOVERY** ($67,070 recoverable value, 234 engineering hours, $42,000 price, and 8.7-month payback).
 
 > Value can scale faster than delivery when multiple locations share ownership, systems, workflows, and management needs.
 
-Those values are **MODELED ASSUMPTIONS**, not findings. This project should try to break the original opportunity hypothesis, not prove it. The final verdict remains open.
+Those values are **MODELED ASSUMPTIONS**, not findings. This project should try to break the original opportunity hypothesis, not prove it. The final executable verdict is **INVESTIGATE**: the technical reuse premise strengthened, but the economic case became more conditional and remains unvalidated.
 
 ## What this project is—and is not
 
@@ -47,7 +47,7 @@ Code that could theoretically be reused is not automatically demonstrated reuse.
 
 ## Current scope and progression
 
-Chapters 0 through 15 are implemented. Chapter 15 tests the executable custom scope against fictional capability-based alternatives without claiming market validation. The current progression is:
+Chapters 0 through 16 are complete. Chapter 16 combines the technical, delivery, support, discovery, economic, and build-versus-buy evidence. The final progression is:
 
 ```text
 Chapter 0 — The Hypothesis                         COMPLETE
@@ -66,34 +66,15 @@ Chapter 12 — Onboard Another Restaurant            COMPLETE
 Chapter 13 — Standardization Stress Test            COMPLETE
 Chapter 14 — Delivery Economics From Engineering Evidence COMPLETE
 Chapter 15 — Build vs. Buy Revisited                COMPLETE
-Chapter 16 — Capstone: Project, Product, or Bad Idea? NEXT
+Chapter 16 — Capstone: Project, Product, or Bad Idea? COMPLETE
 ```
 
-Later chapters remain intentionally absent and should follow this experimental flow:
 
-```text
-CASEBOOK HYPOTHESIS
-        ↓
-DISCOVERY
-        ↓
-ARCHITECTURE
-        ↓
-IMPLEMENTATION
-        ↓
-ADDITIONAL LOCATIONS
-        ↓
-EXCEPTIONS
-        ↓
-MEASURED REUSE
-        ↓
-DELIVERY + SUPPORT EVIDENCE
-        ↓
-BUILD VS. BUY AGAIN
-        ↓
-RECALCULATE THE OPPORTUNITY
-```
+## Final Findings
 
-Possible eventual conclusions include **PROMISING — VALIDATE IN DISCOVERY**, **ONE-OFF CUSTOM PROJECT**, **BUY / CONFIGURE**, **INVESTIGATE**, **POOR TARGET CUSTOMER**, and **NO DEAL**.
+Primary verdict: **INVESTIGATE**. The lab strengthened the plausibility of a reusable canonical core and one shared management briefing, but weakened the simple fixed-plus-location economic model. JRH-006 showed configuration-heavy onboarding under standardization; JRH-007 showed that acquisitions can add new parsers, unstable mappings, manual operation, limited evidence, and support. The result is a **repeatable custom service / productized delivery**, not a demonstrated software product. Standardized groups should test **BUY / CONFIGURE** first and consider **NARROW CUSTOM** only for a verified bounded gap; fragmented groups should **STANDARDIZE FIRST**.
+
+Recoverable value, the 234 engineering hours, price, and payback remain **MODELED ASSUMPTIONS**. Actual engineering time, customer value, willingness to pay, support frequency, vendor capability/pricing, sales-cycle economics, and real data quality remain unvalidated. See [Chapter 16](docs/chapters/16-capstone-project-product-or-bad-idea.md) and run the capstone; there are no later chapters.
 
 ## Run the completed chapters
 
@@ -120,6 +101,7 @@ restaurant-integration-lab onboard
 restaurant-integration-lab stress-test
 restaurant-integration-lab economics
 restaurant-integration-lab build-vs-buy
+restaurant-integration-lab capstone
 # Equivalent without the installed script:
 python -m restaurant_integration_lab hypothesis
 python -m restaurant_integration_lab discovery
@@ -138,6 +120,7 @@ python -m restaurant_integration_lab onboard
 python -m restaurant_integration_lab stress-test
 python -m restaurant_integration_lab economics
 python -m restaurant_integration_lab build-vs-buy
+python -m restaurant_integration_lab capstone
 ```
 
 Run the tests:
@@ -146,4 +129,4 @@ Run the tests:
 pytest
 ```
 
-Read [Chapter 0](docs/chapters/00-the-hypothesis.md) for the assumptions and evidence rules, [Chapter 1](docs/chapters/01-discovery-before-architecture.md) for the original five-location system landscape, [Chapter 2](docs/chapters/02-shared-operational-model.md) for the canonical boundary, [Chapter 3](docs/chapters/03-build-location-1.md) for the first source-specific ingestion, [Chapter 4](docs/chapters/04-add-location-2.md) for the first demonstrated reuse experiment, [Chapter 5](docs/chapters/05-normalize-across-locations.md) for explicit cross-location normalization, [Chapter 6](docs/chapters/06-reservations-and-demand-context.md) for reservation demand context, [Chapter 7](docs/chapters/07-add-labor.md) for labor evidence, [Chapter 8](docs/chapters/08-add-inventory.md) for explicit inventory identity, units, and reconciliation boundaries, and [Chapter 9](docs/chapters/09-exceptions-and-data-quality.md) for the unified exception workflow. [Chapter 10](docs/chapters/10-group-management-briefing.md) documents the deterministic group management briefing. [Chapter 11](docs/chapters/11-production-integration-engineering.md) demonstrates local scheduling, credentials, idempotency, retries, observability, recovery, and readiness. [Chapter 12](docs/chapters/12-onboard-another-restaurant.md) executes the sixth-location marginal onboarding experiment. [Chapter 13](docs/chapters/13-standardization-stress-test.md) contrasts that standardized onboarding with a non-standard acquisition and records concrete reuse erosion. [Chapter 14](docs/chapters/14-delivery-economics-from-engineering-evidence.md) maps structure to the fictional economics. [Chapter 15](docs/chapters/15-build-vs-buy-revisited.md) compares the demonstrated custom scope with fictional SaaS, BI, automation, spreadsheet/process, narrow-custom, full-custom, and defer alternatives while leaving the final opportunity verdict unresolved.
+Read [Chapter 0](docs/chapters/00-the-hypothesis.md) for the assumptions and evidence rules, [Chapter 1](docs/chapters/01-discovery-before-architecture.md) for the original five-location system landscape, [Chapter 2](docs/chapters/02-shared-operational-model.md) for the canonical boundary, [Chapter 3](docs/chapters/03-build-location-1.md) for the first source-specific ingestion, [Chapter 4](docs/chapters/04-add-location-2.md) for the first demonstrated reuse experiment, [Chapter 5](docs/chapters/05-normalize-across-locations.md) for explicit cross-location normalization, [Chapter 6](docs/chapters/06-reservations-and-demand-context.md) for reservation demand context, [Chapter 7](docs/chapters/07-add-labor.md) for labor evidence, [Chapter 8](docs/chapters/08-add-inventory.md) for explicit inventory identity, units, and reconciliation boundaries, and [Chapter 9](docs/chapters/09-exceptions-and-data-quality.md) for the unified exception workflow. [Chapter 10](docs/chapters/10-group-management-briefing.md) documents the deterministic group management briefing. [Chapter 11](docs/chapters/11-production-integration-engineering.md) demonstrates local scheduling, credentials, idempotency, retries, observability, recovery, and readiness. [Chapter 12](docs/chapters/12-onboard-another-restaurant.md) executes the sixth-location marginal onboarding experiment. [Chapter 13](docs/chapters/13-standardization-stress-test.md) contrasts that standardized onboarding with a non-standard acquisition and records concrete reuse erosion. [Chapter 14](docs/chapters/14-delivery-economics-from-engineering-evidence.md) maps structure to the fictional economics. [Chapter 15](docs/chapters/15-build-vs-buy-revisited.md) compares the demonstrated custom scope with fictional alternatives. [Chapter 16](docs/chapters/16-capstone-project-product-or-bad-idea.md) combines all evidence into the final qualification, project/product classification, and verdict.
