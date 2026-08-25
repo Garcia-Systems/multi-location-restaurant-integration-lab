@@ -1,0 +1,32 @@
+{
+  "notice": "SYNTHETIC LAB RESULTS — OBSERVABLE STRUCTURE ONLY; NO ENGINEERING HOURS",
+  "chapter": 4,
+  "location_1_code_modified_for_location_2": true,
+  "location_1_modification_reason": "After both importers existed, common result, event, exception, measure, and calculation definitions were extracted to ingestion.py; RRK source parsing and behavior did not change.",
+  "canonical_model_changes_required": false,
+  "exception_handling": "reused unchanged",
+  "reuse_candidates": [
+    {"candidate": "canonical Sale, BusinessDate, and Provenance", "result": "DEMONSTRATED REUSE", "evidence": "Both importers emit the existing canonical types without model changes."},
+    {"candidate": "canonical sales calculations", "result": "DEMONSTRATED REUSE", "evidence": "The same calculate_sales function consumes accepted records from RRK and CST unchanged."},
+    {"candidate": "explicit mapping mechanism", "result": "CONFIGURATION REUSE", "evidence": "resolve_location and resolve_product are unchanged; CST adds one location and three product mapping records."},
+    {"candidate": "ingestion outcomes and exception representation", "result": "DEMONSTRATED REUSE", "evidence": "Repeated identical structures were extracted after both implementations existed."},
+    {"candidate": "Location #1 HarborTill JSON parser", "result": "REJECTED REUSE CANDIDATE", "evidence": "CST requires scheduled CSV, US dates, 12-hour times, signed discounts, Y/N status, and TicketLine identity."}
+  ],
+  "before_after_refactor": [
+    {"before_location_2": "ingestion outcome was a reuse candidate", "observed_in_both": true, "action": "extracted shared outcome types after the second implementation"},
+    {"before_location_2": "POS parser was a reuse candidate", "observed_in_both": false, "action": "kept two small source-specific parsers"}
+  ],
+  "observable_counts": {
+    "canonical_types_reused_unchanged": 3,
+    "calculation_functions_reused_unchanged": 1,
+    "mapping_functions_reused_unchanged": 2,
+    "validation_rules_reused": 4,
+    "location_2_validation_rules_added": 5,
+    "source_specific_parser_classes_added": 1,
+    "configuration_mapping_records_added": 4,
+    "exception_categories_reused": 5,
+    "exception_categories_added": 0,
+    "existing_source_specific_parsers_modified": 0,
+    "chapter_4_test_functions_added": 8
+  }
+}
