@@ -7,6 +7,7 @@ from .discovery import discovery_report
 from .model_demo import model_report
 from .location1 import location1_report
 from .location2 import location2_report
+from .normalization import normalization_report
 
 
 def _currency(value: int) -> str:
@@ -62,12 +63,12 @@ def main(argv: Sequence[str] | None = None) -> int:
 
     arguments = list(sys.argv[1:] if argv is None else argv)
     command = arguments[0] if arguments else "hypothesis"
-    if len(arguments) > 1 or command not in {"hypothesis", "discovery", "model", "location1", "location2"}:
-        print("usage: restaurant-integration-lab [hypothesis|discovery|model|location1|location2]", file=sys.stderr)
+    if len(arguments) > 1 or command not in {"hypothesis", "discovery", "model", "location1", "location2", "normalize"}:
+        print("usage: restaurant-integration-lab [hypothesis|discovery|model|location1|location2|normalize]", file=sys.stderr)
         return 2
     reports = {"hypothesis": comparison_report, "discovery": discovery_report,
                "model": model_report, "location1": location1_report,
-               "location2": location2_report}
+               "location2": location2_report, "normalize": normalization_report}
     print(reports[command]())
     return 0
 
