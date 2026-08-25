@@ -23,6 +23,7 @@ DAY_START = time(4)
 BHO = Location("JRH-003", "Blue Heron Oyster House")
 MBC = Location("JRH-004", "Manchester Bake & Coffee")
 JRS = Location("JRH-005", "James River Smokehouse")
+ODR = Location("JRH-007", "Old Dominion Roadhouse")
 LOCATION_MAPPINGS = (
     LocationMapping(SourceIdentity(SOURCE_SYSTEM, "14"), RRK),
     LocationMapping(SourceIdentity(SOURCE_SYSTEM, "BHO-RVA"), BHO),
@@ -97,6 +98,7 @@ EVIDENCE_AVAILABILITY = {
     BHO: DomainEvidence(Availability.AVAILABLE, 2),
     MBC: DomainEvidence(Availability.NOT_CONFIGURED), # BakeAhead is not table reservations.
     JRS: DomainEvidence(Availability.UNAVAILABLE),
+    ODR: DomainEvidence(Availability.NOT_APPLICABLE),
 }
 
 class TableCurrentParser:
