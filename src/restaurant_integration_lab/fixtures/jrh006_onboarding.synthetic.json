@@ -1,0 +1,6 @@
+{
+  "synthetic_fixture": true,
+  "reservations": [{"booking_id":"TGC-R-1","venue_id":"TC-TGC-206","reserved_at":"2026-08-25T18:00:00","party_size":4,"state":"finished"}],
+  "labor": [{"shift_id":"TGC-S-1","location_id":"TGC_RVA_06","worker_id":"W-600","job_code":"BARISTA_LEAD","clock_in":"2026-08-25T06:00:00","clock_out":"2026-08-25T14:00:00","scheduled_hours":"8","worked_hours":"8","labor_cost":"176.00","status":"worked"}],
+  "inventory": [{"record_id":"TGC-I-1","venue_id":"TGC-06","ingredient_id":"TGC-BISCUIT-CASE","description":"Frozen biscuit dough","quantity":"2","unit":"CASE","count_date":"2026-08-25","record_type":"PHYSICAL_COUNT","category":"bakery"}]
+}

@@ -1,0 +1,14 @@
+{
+  "chapter": 12,
+  "location": "JRH-006",
+  "notice": "SYNTHETIC OBSERVED STRUCTURE; NO ENGINEERING HOURS",
+  "shared_code_modified_for_jrh006": false,
+  "canonical_model_modified": false,
+  "management_briefing_code_modified": false,
+  "previous_locations_requiring_changes": 0,
+  "mapping_counts": {"source_location_ids":4,"products":3,"categories":2,"roles":1,"statuses":1,"units":0,"product_specific_pack_conversions":1},
+  "source_specific_code_counts": {"parser_modules":0,"parser_functions":0,"validation_rules":0,"existing_parser_modifications":0,"exception_categories":0},
+  "testing_burden": {"fixtures":3,"test_functions":12,"existing_tests_modified":0,"regression_scenarios":3,"operations_scenarios":1},
+  "marginal_structure": {"mostly":"CONFIGURATION + MAPPINGS","some":"CUSTOMER DISCOVERY + TESTING + DEPLOYMENT / OPERATIONS + NEW SUPPORT OBLIGATION","little":"NEW SOURCE-SPECIFIC CODE (none observed)","none":"REWORK + CANONICAL MODEL REWORK"},
+  "warning": "One onboarding does not prove linear cost or universal scalability."
+}
