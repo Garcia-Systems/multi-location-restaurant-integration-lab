@@ -1,0 +1,22 @@
+{
+  "chapter": 13,
+  "experiment": "STANDARDIZED MARGINAL LOCATION vs NON-STANDARD MARGINAL LOCATION",
+  "location": "JRH-007",
+  "work_categories": {
+    "discovery": ["eight domain gap classifications", "three unresolved discovery questions"],
+    "configuration": ["canonical location", "three manual-drop operational jobs", "credential and paths"],
+    "mappings": ["two labor roles"],
+    "unstable_manual_mappings": ["Classic Cheeseburger exact name", "Sweet Tea exact name"],
+    "source_specific_code": ["strict MillLedger week-one parser", "manual labor workbook boundary"],
+    "shared_code_changes": ["reservation NOT APPLICABLE availability", "stress-test CLI registration"],
+    "testing": ["Chapter 13 fixtures", "failure, partial usefulness, limitations, comparison and determinism tests"],
+    "deployment_operations": ["three weekly manual-drop jobs", "irregular delivery monitoring"],
+    "rework": ["week-two schema requires explicit handling", "briefing availability extension"],
+    "support_obligation": ["manual delivery", "schema monitoring", "exact-name mappings", "unit/pack investigation", "missing labor cost", "source corrections"]
+  },
+  "unsafe_evidence": ["complete product comparison", "inventory reconciliation", "labor cost percentage"],
+  "safe_partial_evidence": ["canonical location", "canonical business date", "accepted net sales", "worked labor hours"],
+  "engineering_hours": null,
+  "commercial_cost": null,
+  "chapter_14_implemented": false
+}

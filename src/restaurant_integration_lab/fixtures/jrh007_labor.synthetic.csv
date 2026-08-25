@@ -1,0 +1,3 @@
+Employee,Role,Clock In,Clock Out,Worked Hours,Scheduled Hours,Labor Cost
+E-17,Floor,2026-08-24T18:00:00,2026-08-25T01:00:00,7,6.5,
+E-22,Cook I,2026-08-24T16:00:00,2026-08-24T23:00:00,7,7,126.00
