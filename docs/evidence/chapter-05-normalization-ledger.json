@@ -1,0 +1,30 @@
+{
+  "notice": "SYNTHETIC LAB RESULTS — OBSERVABLE STRUCTURE ONLY; NO ENGINEERING HOURS",
+  "chapter": 5,
+  "demonstrated_reuse": [
+    "canonical Sale, BusinessDate, Product, Location, and Provenance",
+    "exact Decimal calculations",
+    "explicit mapping resolution",
+    "ingestion exception representation"
+  ],
+  "configuration_work": [
+    "two canonical location mappings plus two documented aliases",
+    "six source product mappings",
+    "five source category mappings"
+  ],
+  "new_shared_work": [
+    "explicit normalization outcomes",
+    "coverage and fixture-relative completeness",
+    "safe cross-location views with inspectable exclusions"
+  ],
+  "source_specific_work": [
+    "RRK JSON parsing, positive discounts, and 04:00 cutoff validation",
+    "CST CSV parsing, signed-negative discounts, source SaleDate, and void interpretation"
+  ],
+  "rework": [],
+  "reuse_hypothesis": {
+    "entire_location_1_implementation_duplicated": false,
+    "adding_location_2_was_configuration_only": false,
+    "conclusion": "The evidence is between the two extremes: shared canonical behavior and mapping machinery coexist with source-specific parsing and new shared normalization work."
+  }
+}
