@@ -181,11 +181,14 @@ class LaborRecord:
     provenance: Provenance
     role: str | None = None
     labor_cost: Decimal | None = None
+    scheduled_hours: Decimal | None = None
 
     def __post_init__(self) -> None:
         _decimal(self.hours, "labor hours")
         if self.labor_cost is not None:
             _decimal(self.labor_cost, "labor cost")
+        if self.scheduled_hours is not None:
+            _decimal(self.scheduled_hours, "scheduled labor hours")
 
 
 @dataclass(frozen=True)

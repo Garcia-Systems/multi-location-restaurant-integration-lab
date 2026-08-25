@@ -1,0 +1,15 @@
+{
+  "chapter": 7,
+  "evidence_type": "OBSERVED LAB RESULT",
+  "engineering_hours": null,
+  "labor_source": "ShiftHarbor synthetic group labor API JSON export",
+  "demonstrated_cross_system_reuse": ["canonical Location and BusinessDate three-domain join", "namespaced SourceIdentity resolution", "Provenance", "IngestionException", "IngestionEvent"],
+  "configuration_reuse": ["2 labor location mappings", "5 location-specific role mappings", "04:00 operational-day cutoff"],
+  "new_system_specific_work": ["ShiftHarbor JSON parser", "worked and scheduled hour validation", "role mapping", "overnight shift semantics", "labor aggregation", "labor-versus-demand context"],
+  "rework": ["LaborRecord extended with optional scheduled_hours so scheduled and worked evidence are not conflated"],
+  "rejected_reuse_candidates": ["sales-shaped IngestionResult", "reservation-shaped ReservationIngestionResult"],
+  "canonical_types_reused": ["Location", "BusinessDate", "LaborRecord", "SourceIdentity", "Provenance"],
+  "canonical_types_modified": ["LaborRecord"],
+  "modified_modules": ["operational_model.py", "cli.py"],
+  "fixture": "shiftharbor_labor.synthetic.json"
+}
