@@ -1,5 +1,13 @@
 # Chapter 13 — Standardization Stress Test
 
+> **Fiction notice:** JRH-007, its systems, exports, operating practices, and all resulting evidence are synthetic lab fixtures, not claims about a real restaurant or industry norms.
+
+## Run the experiment
+
+```bash
+python -m restaurant_integration_lab stress-test
+```
+
 ## 1. Why this acquisition is the stress test
 
 Chapter 12 deliberately selected a mostly compatible sixth restaurant. Chapter 13 selects **Old Dominion Roadhouse (`JRH-007`)**, a recently acquired walk-in roadside grill, because its management needs remain relevant to James River Hospitality Group while its systems and workflows do not. This is the hardest integration so far and is intended to locate the boundary of reuse—not preserve the original `PROMISING` modeled verdict.
