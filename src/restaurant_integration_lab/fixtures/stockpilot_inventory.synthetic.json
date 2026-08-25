@@ -1,0 +1,16 @@
+{
+  "synthetic_fixture": true,
+  "source": "StockPilot nightly count export",
+  "arrived_at": "2026-08-26T02:15:00",
+  "records": [
+    {"record_id":"SP-001","venue_id":"Store 014","ingredient_id":"BEEF-PATTY-8OZ","description":"Beef Patty 8 oz","quantity":"24","unit":"EACH","count_date":"2026-08-24","record_type":"PHYSICAL_COUNT","category":"protein"},
+    {"record_id":"SP-002","venue_id":"Store 014","ingredient_id":"OYSTER-MEAT","description":"Shucked oysters","quantity":"3","unit":"LB","count_date":"2026-08-24","record_type":"PHYSICAL_COUNT","category":"seafood"},
+    {"record_id":"SP-003","venue_id":"Store 014","ingredient_id":"PATTY-CASE","description":"Beef patties case","quantity":"2","unit":"CASE","count_date":"2026-08-24","record_type":"PHYSICAL_COUNT","category":"protein"},
+    {"record_id":"SP-004","venue_id":"Store 014","ingredient_id":"UNKNOWN-77","description":"Unmapped garnish","quantity":"5","unit":"EACH","count_date":"2026-08-24","record_type":"PHYSICAL_COUNT","category":"produce"},
+    {"record_id":"SP-005","venue_id":"Store 999","ingredient_id":"BEEF-PATTY-8OZ","description":"Beef Patty 8 oz","quantity":"4","unit":"EACH","count_date":"2026-08-24","record_type":"PHYSICAL_COUNT","category":"protein"},
+    {"record_id":"SP-006","venue_id":"Store 014","ingredient_id":"BEEF-PATTY-8OZ","description":"Beef Patty 8 oz","quantity":"not-a-number","unit":"EACH","count_date":"2026-08-24","record_type":"PHYSICAL_COUNT","category":"protein"},
+    {"record_id":"SP-007","venue_id":"Store 014","ingredient_id":"BEEF-PATTY-8OZ","description":"Beef Patty 8 oz","quantity":"-1","unit":"EACH","count_date":"2026-08-24","record_type":"PHYSICAL_COUNT","category":"protein"},
+    {"record_id":"SP-001","venue_id":"Store 014","ingredient_id":"BEEF-PATTY-8OZ","description":"duplicate","quantity":"24","unit":"EACH","count_date":"2026-08-24","record_type":"PHYSICAL_COUNT","category":"protein"},
+    {"record_id":"SP-008","venue_id":"Store 014","ingredient_id":"OYSTER-MEAT","description":"Shucked oysters","quantity":"12","unit":"EACH","count_date":"2026-08-24","record_type":"PHYSICAL_COUNT","category":"seafood"}
+  ]
+}

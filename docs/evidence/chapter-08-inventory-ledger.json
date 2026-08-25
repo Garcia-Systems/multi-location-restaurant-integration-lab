@@ -1,0 +1,21 @@
+{
+  "chapter": 8,
+  "evidence_type": "OBSERVED LAB RESULT",
+  "notice": "SYNTHETIC FIXTURES; OBSERVABLE STRUCTURE ONLY; NO ENGINEERING HOURS",
+  "inventory_sources": ["StockPilot structured nightly JSON for RRK", "CST Weekly Count manual spreadsheet CSV"],
+  "fixture_formats_added": 2,
+  "source_specific_parser_modules_added": 2,
+  "unit_types_added": ["EACH", "CASE", "LB", "OZ"],
+  "mapping_records_added": {"location": 2, "inventory_item": 7},
+  "canonical_model_changes": ["InventoryItem distinguishes counted stock from Product", "InventoryRecord preserves inventory_item and evidence_arrived_at"],
+  "validation_rules_added": ["finite quantity", "nonnegative PHYSICAL_COUNT", "known location", "explicit item mapping", "non-conflicting item mapping", "known explicit unit", "unique source record ID", "PHYSICAL_COUNT-only scope"],
+  "conversion_rules_added": ["generic LB to OZ and OZ to LB", "product/source-SKU-specific CASE to EACH configuration"],
+  "exception_categories_added": ["UNKNOWN INVENTORY ITEM", "UNKNOWN UNIT", "INCOMPATIBLE UNIT", "MISSING CONVERSION", "CONFLICTING MAPPING"],
+  "demonstrated_cross_system_reuse": ["canonical Location", "BusinessDate", "SourceIdentity", "Provenance", "IngestionException", "IngestionEvent", "deterministic report structures"],
+  "configuration_reuse": ["location mappings", "inventory-item mappings", "product-specific pack conversions"],
+  "new_system_specific_work": ["StockPilot JSON parser", "CST spreadsheet parser", "unit semantics", "count-date semantics", "pack conversion logic", "safe inventory aggregation"],
+  "rework": ["canonical inventory evidence no longer treats menu Product as sufficient inventory identity"],
+  "rejected_reuse_candidates": ["menu Product as universal stock identity", "POS quantity as directly reconcilable to a physical count"],
+  "earlier_code_modified": ["operational_model.py", "ingestion.py", "cli.py", "README.md"],
+  "reconciliation_status": "NOT RECONCILABLE WITH AVAILABLE EVIDENCE"
+}

@@ -68,6 +68,23 @@ class Product:
 
 
 @dataclass(frozen=True)
+class InventoryItem:
+    """A counted stock concept, deliberately not a sellable menu product."""
+
+    canonical_id: str
+    name: str
+    category: str | None = None
+    related_menu_product: Product | None = None
+    relationship_note: str | None = None
+
+    def __post_init__(self) -> None:
+        _required(self.canonical_id, "canonical inventory item ID")
+        _required(self.name, "inventory item name")
+        if self.related_menu_product is not None:
+            _required(self.relationship_note or "", "inventory/menu relationship note")
+
+
+@dataclass(frozen=True)
 class SourceIdentity:
     source_system: str
     source_identifier: str
@@ -201,6 +218,8 @@ class InventoryRecord:
     record_type: str
     provenance: Provenance
     product: Product | None = None
+    inventory_item: InventoryItem | None = None
+    evidence_arrived_at: datetime | None = None
 
     def __post_init__(self) -> None:
         _decimal(self.quantity, "inventory quantity")
