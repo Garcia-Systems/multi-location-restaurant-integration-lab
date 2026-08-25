@@ -9,13 +9,16 @@ from __future__ import annotations
 from dataclasses import dataclass
 from datetime import date, datetime, time
 from decimal import Decimal, InvalidOperation
-from enum import StrEnum
 from importlib.resources import files
 import json
 from pathlib import Path
 from typing import Any, Mapping
 
 from .model_demo import LOCATION_MAPPINGS, OYSTERS, PRODUCT_MAPPINGS, RRK
+from .ingestion import (
+    ExceptionCategory, IngestionEvent, IngestionException, IngestionResult,
+    SalesMeasures, calculate_sales,
+)
 from .operational_model import (
     BusinessDate, Product, ProductMapping, Provenance, Sale, SourceIdentity,
     resolve_location, resolve_product,
@@ -34,31 +37,6 @@ LOCATION_ONE_PRODUCT_MAPPINGS = PRODUCT_MAPPINGS + (
     ProductMapping(SourceIdentity(SOURCE_SYSTEM, "MENU-204"), STEAK),
     ProductMapping(SourceIdentity(SOURCE_SYSTEM, "MENU-910"), RUM_PUNCH),
 )
-
-
-class ExceptionCategory(StrEnum):
-    MALFORMED_RECORD = "MALFORMED RECORD"
-    UNKNOWN_LOCATION = "UNKNOWN LOCATION"
-    UNKNOWN_PRODUCT = "UNKNOWN PRODUCT"
-    DUPLICATE = "DUPLICATE"
-    VALIDATION_FAILURE = "VALIDATION FAILURE"
-
-
-@dataclass(frozen=True)
-class IngestionException:
-    source: str
-    row_number: int
-    source_record_id: str
-    category: ExceptionCategory
-    reason: str
-    human_action_required: bool
-
-
-@dataclass(frozen=True)
-class IngestionEvent:
-    event: str
-    row_number: int | None
-    detail: str
 
 
 @dataclass(frozen=True)
@@ -80,34 +58,6 @@ class LocationOneSourceRecord:
     @property
     def source_record_id(self) -> str:
         return f"{self.transaction_id}:{self.line_id}"
-
-
-@dataclass(frozen=True)
-class SalesMeasures:
-    accepted_sale_lines: int
-    total_quantity: Decimal
-    gross_sales: Decimal
-    discounts: Decimal
-    net_sales: Decimal
-    sales_by_product: tuple[tuple[str, Decimal], ...]
-    sales_by_business_date: tuple[tuple[str, Decimal], ...]
-
-
-@dataclass(frozen=True)
-class IngestionResult:
-    rows_read: int
-    sales: tuple[Sale, ...]
-    exceptions: tuple[IngestionException, ...]
-    events: tuple[IngestionEvent, ...]
-    measures: SalesMeasures
-
-    @property
-    def duplicate_rows(self) -> int:
-        return sum(item.category is ExceptionCategory.DUPLICATE for item in self.exceptions)
-
-    @property
-    def rejected_rows(self) -> int:
-        return len(self.exceptions) - self.duplicate_rows
 
 
 class LocationOneHarborTillJsonParser:
@@ -157,25 +107,6 @@ class LocationOneHarborTillJsonParser:
             business_date, str(row["location_id"]), str(row["item_id"]),
             str(row["item_name"]), quantity, gross, discounts, net, str(row["category"]),
         )
-
-
-def calculate_sales(sales: tuple[Sale, ...]) -> SalesMeasures:
-    """Calculate exact measures exclusively from accepted canonical records."""
-
-    by_product: dict[str, Decimal] = {}
-    by_date: dict[str, Decimal] = {}
-    for sale in sales:
-        assert sale.product is not None
-        by_product[sale.product.canonical_id] = by_product.get(sale.product.canonical_id, Decimal("0")) + sale.net_amount
-        day = str(sale.business_date)
-        by_date[day] = by_date.get(day, Decimal("0")) + sale.net_amount
-    return SalesMeasures(
-        len(sales), sum((sale.quantity for sale in sales), Decimal("0")),
-        sum((sale.gross_amount for sale in sales), Decimal("0")),
-        sum((sale.discount_amount for sale in sales), Decimal("0")),
-        sum((sale.net_amount for sale in sales), Decimal("0")),
-        tuple(sorted(by_product.items())), tuple(sorted(by_date.items())),
-    )
 
 
 class LocationOneSalesImporter:
