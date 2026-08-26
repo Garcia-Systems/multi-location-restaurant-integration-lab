@@ -1,5 +1,7 @@
 # Chapter 5 — Normalize Across Locations
 
+![Chapter 5 illustration](../../images/chapters/5.png)
+
 > **Fiction notice:** Every source, mapping, row, and result is synthetic lab evidence. Completeness means completeness only relative to these ingestion runs.
 
 ## 1. Parsing is not normalization

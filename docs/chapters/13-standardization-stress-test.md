@@ -1,5 +1,7 @@
 # Chapter 13 — Standardization Stress Test
 
+![Chapter 13 illustration](../../images/chapters/13.png)
+
 > **Fiction notice:** JRH-007, its systems, exports, operating practices, and all resulting evidence are synthetic lab fixtures, not claims about a real restaurant or industry norms.
 
 ## Run the experiment

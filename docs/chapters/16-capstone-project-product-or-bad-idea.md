@@ -1,5 +1,7 @@
 # Chapter 16 — Capstone: Project, Product, or Bad Idea?
 
+![Chapter 16 illustration](../../images/chapters/16.png)
+
 > **Fiction and evidence notice:** The commercial numbers remain fictional **MODELED ASSUMPTIONS**. Engineering claims below are **OBSERVED LAB RESULTS** from synthetic fixtures. Sensitivity scenarios remain **SENSITIVITY ASSUMPTIONS**, and purchased-product coverage remains a **FICTIONAL ALTERNATIVE ASSUMPTION**. No real customer, vendor, price, or market was validated.
 
 Run the final assessment with `python -m restaurant_integration_lab capstone`. Its rules and evidence inventory live in `capstone.py`; this chapter explains the conclusion rather than replacing the executable result.

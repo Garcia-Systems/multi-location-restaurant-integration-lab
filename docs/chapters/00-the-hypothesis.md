@@ -1,5 +1,7 @@
 # Chapter 0 — The Hypothesis
 
+![Chapter 0 illustration](../../images/chapters/0.png)
+
 > **Fiction notice:** James River Hospitality Group, its restaurants, systems, datasets, vendors, financial figures, and operational assumptions are fictional. Nothing below is an actual customer result or an endorsement of a real system.
 
 ## 0.1 The casebook claim

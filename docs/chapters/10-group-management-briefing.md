@@ -1,5 +1,7 @@
 # Chapter 10 — The Group Management Briefing
 
+![Chapter 10 illustration](../../images/chapters/10.png)
+
 > **Fiction notice:** James River Hospitality Group, every source, fixture, signal, and result is synthetic lab evidence. This chapter is not a claim about a real restaurant group or market.
 
 ## Run the artifact first

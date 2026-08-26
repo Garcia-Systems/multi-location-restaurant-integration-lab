@@ -1,5 +1,7 @@
 # Chapter 8 — Add Inventory
 
+![Chapter 8 illustration](../../images/chapters/8.png)
+
 > **Fiction notice:** StockPilot, CST Weekly Count, every restaurant, mapping, count, and exception in this chapter is synthetic lab evidence. Existing fictional sources remain authoritative.
 
 ## Run the experiment first

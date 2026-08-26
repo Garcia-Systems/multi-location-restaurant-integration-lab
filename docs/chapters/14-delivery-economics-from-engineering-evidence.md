@@ -1,5 +1,7 @@
 # Chapter 14 — Delivery Economics From Engineering Evidence
 
+![Chapter 14 illustration](../../images/chapters/14.png)
+
 > **Fiction and evidence notice:** All commercial values are inherited fictional **MODELED ASSUMPTIONS**. Chapters 3–13 produced **OBSERVED IMPLEMENTATION STRUCTURE**, not measured developer time. This lab did not track engineering hours.
 
 Run `python -m restaurant_integration_lab economics`. The structured conclusion is in the [Chapter 14 ledger](../evidence/chapter-14-economics-ledger.json).

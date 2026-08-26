@@ -1,5 +1,7 @@
 # Chapter 1 — Discovery Before Architecture
 
+![Chapter 1 illustration](../../images/chapters/1.png)
+
 > **Fiction notice:** Every restaurant, vendor, interface, capability, and finding in this chapter is synthetic lab evidence. It is not market validation or a claim about real restaurants.
 
 > Architecture is a response to discovered constraints, not a drawing created before discovery.

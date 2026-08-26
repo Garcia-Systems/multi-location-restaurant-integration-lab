@@ -1,5 +1,7 @@
 # Chapter 4 — Add Location #2
 
+![Chapter 4 illustration](../../images/chapters/4.png)
+
 > **Fiction notice:** Canal Street Tacos, HarborTill, all mappings, records, and results are synthetic lab evidence.
 
 ## Execute the reuse test

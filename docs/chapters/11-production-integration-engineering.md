@@ -1,5 +1,7 @@
 # Chapter 11 — Production Integration Engineering
 
+![Chapter 11 illustration](../../images/chapters/11.png)
+
 > **Fiction notice:** This is deterministic local lab evidence. It is not a production deployment, certification, SLA, or claim about a real restaurant.
 
 ## Run the operational boundary first

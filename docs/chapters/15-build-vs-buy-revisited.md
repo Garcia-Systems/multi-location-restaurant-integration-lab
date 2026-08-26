@@ -1,5 +1,7 @@
 # Chapter 15 — Build vs. Buy Revisited
 
+![Chapter 15 illustration](../../images/chapters/15.png)
+
 Technical success does not settle procurement. Chapters 2–14 show that a custom integration can normalize synthetic operational evidence and produce a useful briefing; they do not show that a customer should purchase it. Chapter 15 therefore treats custom software as one competitor and makes it earn its scope. Run the deterministic hypothesis with:
 
 ```bash
