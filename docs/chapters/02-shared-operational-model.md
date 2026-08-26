@@ -1,5 +1,7 @@
 # Chapter 2 — Define the Shared Operational Model
 
+![Chapter 2 illustration](../../images/chapters/2.png)
+
 > **Fiction notice:** Every mapping, record, and observation here is synthetic lab evidence. It is not a real restaurant finding or a source integration.
 
 ## Why the canonical boundary exists

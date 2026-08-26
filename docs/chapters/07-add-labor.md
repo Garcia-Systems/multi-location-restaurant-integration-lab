@@ -1,5 +1,7 @@
 # Chapter 7 — Add Labor
 
+![Chapter 7 illustration](../../images/chapters/7.png)
+
 > **Fiction notice:** ShiftHarbor, James River Hospitality Group, every identifier, and every row are synthetic lab evidence. No personal information or real payroll data is present.
 
 ## Boundary and source identity

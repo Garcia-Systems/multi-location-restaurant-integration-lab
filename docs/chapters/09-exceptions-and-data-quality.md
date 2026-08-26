@@ -1,5 +1,7 @@
 # Chapter 9 — Exceptions and Data Quality
 
+![Chapter 9 illustration](../../images/chapters/9.png)
+
 ## Run the experiment
 
 ```bash

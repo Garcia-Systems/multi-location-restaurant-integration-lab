@@ -1,5 +1,7 @@
 # Chapter 3 — Build Location #1
 
+![Chapter 3 illustration](../../images/chapters/3.png)
+
 > **Fiction notice:** River & Rail Kitchen, HarborTill, every mapping, and every record are synthetic lab evidence. The fixture identifies itself as synthetic.
 
 ## The source and fixture

@@ -1,5 +1,7 @@
 # Chapter 6 — Add Reservations and Demand Context
 
+![Chapter 6 illustration](../../images/chapters/6.png)
+
 ## Execute the experiment
 
 ```bash

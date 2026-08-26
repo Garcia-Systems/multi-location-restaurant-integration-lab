@@ -1,5 +1,7 @@
 # Chapter 12 — Onboard Another Restaurant
 
+![Chapter 12 illustration](../../images/chapters/12.png)
+
 > **Fiction notice:** Tidewater Garden Cafe, its vendors, identifiers, fixtures, and results are synthetic. This chapter records structural evidence, not engineering hours or market validation.
 
 ## Why this is the first marginal test
